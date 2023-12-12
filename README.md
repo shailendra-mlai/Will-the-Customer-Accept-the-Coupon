@@ -57,7 +57,7 @@ Explore Coffee House coupon groups and try to determine the characteristics of p
 
 Obervations:
 
-Acceptance rate of drivers who go to Coffee House more than 4 times a month, driving alone and before noon accepts coupon 10.137%
-Acceptance rate of drivers who go to Coffee House more than once a month, driving with a passanger and are under the age of 30 accepts coupon 16.948%
-Acceptance rate of drivers who Carry out & Take away more than 4 times a month, when the temparature is 80 accepts coupon 30.676%
-Acceptance rate of drivers who are under the age of 30 and accepts coupon before noon accepts coupon 23.601%
+1. Acceptance rate of drivers who go to Coffee House more than 4 times a month, driving alone and before noon accepts coupon 10.137%
+2. Acceptance rate of drivers who go to Coffee House more than once a month, driving with a passanger and are under the age of 30 accepts coupon 16.948%
+3. Acceptance rate of drivers who Carry out & Take away more than 4 times a month, when the temparature is 80 accepts coupon 30.676%
+4. Acceptance rate of drivers who are under the age of 30 and accepts coupon before noon accepts coupon 23.601%
