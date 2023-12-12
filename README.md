@@ -13,4 +13,17 @@ The goal of this project is to use what you know about visualizations and probab
 
 **Data**
 
-This data comes to us from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’. There are five different types of coupons -- less expensive restaurants (under $20), coffee houses, carry out & take away, bar, and more expensive restaurants ($20 - $50).
+This data comes from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’. There are five different types of coupons -- less expensive restaurants (under $20), coffee houses, carry out & take away, bar, and more expensive restaurants ($20 - $50).
+
+**The Jupyter Notebook covers the following:**
+
+1. Read in the coupons.csv file.
+2. Investigate the dataset for missing or problematic data: 
+   data.columns
+   data.info()
+   Look for null value using data.isna().sum())
+   Car column has 99% null Values
+3. Decide what to do about your missing data
+   Car column has 99% null Values. Dropping the car column.
+   Below are the missing Values which are around 1% rows. Dropping those row with NaN
+   Bar 107 CoffeeHouse 217 CarryAway 151 RestaurantLessThan20 130 Restaurant20To50 189
