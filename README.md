@@ -18,12 +18,46 @@ This data comes from the UCI Machine Learning repository and was collected via a
 **The Jupyter Notebook covers the following:**
 
 1. Read in the coupons.csv file.
-2. Investigate the dataset for missing or problematic data: 
-   data.columns
-   data.info()
-   Look for null value using data.isna().sum())
+2. Investigate the dataset for missing or problematic data: using data.columns , data.info(). Look for null value using data.isna().sum())
    Car column has 99% null Values
 3. Decide what to do about your missing data
    Car column has 99% null Values. Dropping the car column.
    Below are the missing Values which are around 1% rows. Dropping those row with NaN
    Bar 107 CoffeeHouse 217 CarryAway 151 RestaurantLessThan20 130 Restaurant20To50 189
+4. What proportion of the total observations chose to accept the coupon?
+   The number of users that are accepted the coupon is  6877 , 56.934 %
+   The number of users that are rejected the coupon is  5202 , 43.066 %
+5. Used Seaborn bar plot to visualize the coupon column
+6. Used Plotly histogram to visualize the temperature column.
+
+**Investigating the Bar Coupons**
+
+1. Create a new DataFrame that contains just the bar coupons.
+2. What proportion of bar coupons were accepted?
+   Ratio of Bar Coupons accepted and Bar Coupons offered 0.41191845269210664 or 41.192 %
+   Ratio of Bar Coupons accepted and Coupons accepted 0.11458484804420532 or 11.458%
+   Ratio of Bar Coupons accepted and Coupons Offered 0.06523718850898254 or 6.524%
+3. Compare the acceptance rate between those who went to a bar 3 or fewer times a month to those who went more.
+   Acceptance rate of driver those who went to bar 3 or less times a month is 81.345%
+   Acceptance rate of driver those who went to bar 3 or more times a month is 18.655 %
+4. Compare the acceptance rate between drivers who go to a bar more than once a month and are over the age of 25 to the all others. Is there a difference?
+   Acceptance for drivers who go to a bar more than once a month and are over the age of 25 is 35.279%
+   Acceptance for drivers who go to a bar less than once a month and are under the age of 25 is 15.228 %
+5. The acceptance rate of drivers who go to bars more than once a month and had passengers that were not a kid and had occupations other than farming, fishing, or forestry is 17.132%
+6. Compare the acceptance rates between those drivers who:
+   Acceptance rate of drivers who go to bars more than once a month, had passengers that were not a kid, and were not widowed is 17.132%
+   Acceptance rate of drivers who go to bars more than once a month and are under the age of 30 is 29.949%
+   Acceptance rate of drivers who go to cheap restaurants more than 4 times a month and income is less than 50K is 19.289%
+7. Based on these observations, what do you hypothesize about drivers who accepted the bar coupons?
+   Acceptance rate of driver those who went to bar 3 or less times a month is 81.345%, which is higher compare to all other acceptance rate.
+
+**Independent Investigation**
+
+Explore Coffee House coupon groups and try to determine the characteristics of passengers who accept the coupons.
+
+Obervations:
+
+Acceptance rate of drivers who go to Coffee House more than 4 times a month, driving alone and before noon accepts coupon 10.137%
+Acceptance rate of drivers who go to Coffee House more than once a month, driving with a passanger and are under the age of 30 accepts coupon 16.948%
+Acceptance rate of drivers who Carry out & Take away more than 4 times a month, when the temparature is 80 accepts coupon 30.676%
+Acceptance rate of drivers who are under the age of 30 and accepts coupon before noon accepts coupon 23.601%
